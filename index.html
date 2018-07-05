@@ -1,0 +1,23 @@
+<html ng-app="soccerApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccer App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body ng-cloak>
+    <nav class="container-fluid">
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
+<script src="js/module.js"></script>
+<script src="component/component-js/team-list.component.js"></script>
+<script src="component/component-js/player-list.component.js"></script>
+<script src="services/SoccerService.js"></script>
+
+</body>
+</html>

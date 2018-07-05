@@ -1,0 +1,22 @@
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">{{model.players.name}}</h1>
+            <img src="{{model.API_URL}}/{{model.players.image_path}}">
+        </div>
+    </section>
+    <div class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div ng-repeat="player in model.players.players" class="col-md-4">
+                    <div class="card">
+                        <img src="{{model.API_URL}}/{{player.image_path}}">
+                        <div class="card-body">
+                            <p class="card-text">{{player.first_name}} {{player.last_name}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

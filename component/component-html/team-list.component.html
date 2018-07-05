@@ -1,0 +1,21 @@
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Soccer Teams</h1>
+        </div>
+    </section>
+    <div class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div ng-repeat="team in model.teams" class="col-md-4">
+                    <div class="card">
+                        <img src="http://localhost:8000/{{team.image_path}}">
+                        <div class="card-body">
+                            <p class="card-text"><a href="#/team/{{team.id}}/players/">{{team.name}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

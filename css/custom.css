@@ -1,0 +1,19 @@
+body {
+    background-color: #CCCCCC;
+}
+
+.card {
+    border: 0px;
+    display: block;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.card-body a {
+    color: brown;
+    font-family: Tahoma;
+}
