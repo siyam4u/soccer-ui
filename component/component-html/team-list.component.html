@@ -9,7 +9,7 @@
             <div class="row">
                 <div ng-repeat="team in model.teams" class="col-md-4">
                     <div class="card">
-                        <img src="http://localhost:8000/{{team.image_path}}">
+                        <img src="{{model.API_URL}}/{{team.image_path}}">
                         <div class="card-body">
                             <p class="card-text"><a href="#/team/{{team.id}}/players/">{{team.name}}</a></p>
                         </div>
